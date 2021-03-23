@@ -88,182 +88,298 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav" class="p-t-30">
     					<li class="sidebar-item">
-                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{url('/')}}" target="_blank" aria-expanded="false">
+                            <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{url('/')}}" aria-expanded="false">
                                 <i class="mdi mdi-view-dashboard"></i>
                                 <span class="hide-menu">Dashboard</span>
                             </a>
                         </li> 
+
+
+                        {{-- logo --}}
                         <li class="sidebar-item"> 
                             <a class="sidebar-link has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
                                 <i class="mdi mdi-receipt"></i>
-                                <span class="hide-menu">Category </span>
+                                <span class="hide-menu">Logo</span>
                             </a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item">
-                                    <a href="{{route('add_category')}}" class="sidebar-link">
+                                    <a href="{{route('logo')}}" class="sidebar-link">
                                         <i class="mdi mdi-note-outline"></i>
-                                        <span class="hide-menu">Add category </span>
+                                        <span class="hide-menu">Add Logo</span>
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="{{route('view_category')}}" class="sidebar-link">
-                                        <i class="mdi mdi-note-outline"></i>
-                                        <span class="hide-menu">View category </span>
+                                    <a href="{{route('manageLogo')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-plus"></i>
+                                        <span class="hide-menu">Manage Logo </span>
                                     </a>
                                 </li>
+								
                             </ul>
                         </li>
+						
+                        {{-- end logo --}}
+
+
+
+                        {{-- Testimonial --}}
                         <li class="sidebar-item"> 
                             <a class="sidebar-link has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
                                 <i class="mdi mdi-receipt"></i>
-                                <span class="hide-menu">Employee</span>
+                                <span class="hide-menu">Testimonial </span>
                             </a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item">
-                                    <a href="{{route('add_employee')}}" class="sidebar-link">
+                                    <a href="{{route('addTestimonial')}}" class="sidebar-link">
                                         <i class="mdi mdi-note-outline"></i>
-                                        <span class="hide-menu"> Add Employee </span>
+                                        <span class="hide-menu">Add Testimonial </span>
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="{{route('employee_list')}}" class="sidebar-link">
-                                        <i class="mdi mdi-note-plus"></i>
-                                        <span class="hide-menu"> Manage Employee </span>
+                                    <a href="{{route('manageTestimonial')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-outline"></i>
+                                        <span class="hide-menu">Manage Testimonial </span>
                                     </a>
                                 </li>
                                 
                             </ul>
                         </li>
-						<li class="sidebar-item"> 
+                        {{-- end Testimonial --}}
+
+                        {{-- Slider --}}
+                        <li class="sidebar-item"> 
                             <a class="sidebar-link has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
                                 <i class="mdi mdi-receipt"></i>
-                                <span class="hide-menu">Order </span>
+                                <span class="hide-menu">Slider </span>
                             </a>
                             <ul aria-expanded="false" class="collapse  first-level">
                                 <li class="sidebar-item">
-                                    <a href="order.php" class="sidebar-link">
+                                    <a href="{{route('addSlider')}}" class="sidebar-link">
                                         <i class="mdi mdi-note-outline"></i>
-                                        <span class="hide-menu"> New Order </span>
+                                        <span class="hide-menu">Add Slider </span>
                                     </a>
                                 </li>
                                 <li class="sidebar-item">
-                                    <a href="delivered_order.php" class="sidebar-link">
-                                        <i class="mdi mdi-note-plus"></i>
-                                        <span class="hide-menu"> Delivered Order </span>
+                                    <a href="{{route('manageSlider')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-outline"></i>
+                                        <span class="hide-menu">Manage Slider </span>
                                     </a>
                                 </li>
+                                
+                            </ul>
+                        </li>
+                        {{-- end Slider --}}
+
+                        {{-- contact --}}
+                        <li class="sidebar-item"> 
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                                <i class="mdi mdi-receipt"></i>
+                                <span class="hide-menu">Contact</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item">
+                                    <a href="{{route('addContact')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-outline"></i>
+                                        <span class="hide-menu"> Add Contact </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="{{route('manageContact')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-plus"></i>
+                                        <span class="hide-menu"> Manage Contact </span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        {{-- end contact --}}
+
+                        {{-- about --}}
+                        <li class="sidebar-item"> 
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                                <i class="mdi mdi-receipt"></i>
+                                <span class="hide-menu">About Us</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item">
+                                    <a href="{{route('addAbout')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-outline"></i>
+                                        <span class="hide-menu"> Add About </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="{{route('manageAbout')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-plus"></i>
+                                        <span class="hide-menu"> Manage About </span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        {{-- end about --}}
+
+                        {{-- team --}}
+                        <li class="sidebar-item"> 
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                                <i class="mdi mdi-receipt"></i>
+                                <span class="hide-menu">Team Member</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item">
+                                    <a href="{{route('addMember')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-outline"></i>
+                                        <span class="hide-menu"> Add Member </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="{{route('manageMember')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-plus"></i>
+                                        <span class="hide-menu"> Manage Member </span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        {{-- end team --}}
+
+                        {{-- gallery --}}
+                        <li class="sidebar-item"> 
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                                <i class="mdi mdi-receipt"></i>
+                                <span class="hide-menu">Gallery</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item">
+                                    <a href="{{route('addImage')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-outline"></i>
+                                        <span class="hide-menu"> Add Image </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="{{route('manageImage')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-plus"></i>
+                                        <span class="hide-menu"> Manage Image </span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+                        {{-- end gallery --}}
+
+                        {{-- portfolio --}} 
+                        <li class="sidebar-item"> 
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                                <i class="mdi mdi-receipt"></i>
+                                <span class="hide-menu">Portfolio</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item">
+                                    <a href="{{route('addPortfolio')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-outline"></i>
+                                        <span class="hide-menu"> Add Portfolio </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="{{route('managePortfolio')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-plus"></i>
+                                        <span class="hide-menu"> Manage Portfolio </span>
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </li>
+
+                       {{-- end portfolio --}}
+                       
+
+                        {{-- Service --}}
+						<li class="sidebar-item"> 
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                                <i class="mdi mdi-receipt"></i>
+                                <span class="hide-menu">Service </span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item">
+                                    <a href="{{route('addServiceCategory')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-outline"></i>
+                                        <span class="hide-menu"> Add Service Category </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="{{route('addService')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-outline"></i>
+                                        <span class="hide-menu"> New Service </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="{{route('manageService')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-plus"></i>
+                                        <span class="hide-menu"> Manage Service </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="{{route('addServiceImage')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-plus"></i>
+                                        <span class="hide-menu">Service Image</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        {{-- end Service --}}
+                        
+						
+                        {{-- news --}}
+                        <li class="sidebar-item"> 
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                                <i class="mdi mdi-receipt"></i>
+                                <span class="hide-menu">News </span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item">
+                                    <a href="{{route('addNews')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-outline"></i>
+                                        <span class="hide-menu"> Add News </span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="{{route('manageNews')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-plus"></i>
+                                        <span class="hide-menu"> Manage News </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        {{-- end news --}}
+
+
+                        </li>
+
+
+                        {{-- social --}}
+                        <li class="sidebar-item"> 
+                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
+                                <i class="mdi mdi-receipt"></i>
+                                <span class="hide-menu">Social Links</span>
+                            </a>
+                            <ul aria-expanded="false" class="collapse  first-level">
+                                <li class="sidebar-item">
+                                    <a href="{{route('social')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-outline"></i>
+                                        <span class="hide-menu">Add Social Links</span>
+                                    </a>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="{{route('manageSocial')}}" class="sidebar-link">
+                                        <i class="mdi mdi-note-plus"></i>
+                                        <span class="hide-menu">Manage Social Links </span>
+                                    </a>
+                                </li>
+								
                             </ul>
                         </li>
 						
-						<li class="sidebar-item"> 
-                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
-                                <i class="mdi mdi-receipt"></i>
-                                <span class="hide-menu">Payment Method </span>
-                            </a>
-                            <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item">
-                                    <a href="cod.php" class="sidebar-link">
-                                        <i class="mdi mdi-note-outline"></i>
-                                        <span class="hide-menu">Cash on delivery</span>
-                                    </a>
-                                </li>
-								
-                            </ul>
-                        </li>
-                        <li class="sidebar-item"> 
-                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
-                                <i class="mdi mdi-receipt"></i>
-                                <span class="hide-menu">Messages </span>
-                            </a>
-                            <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item">
-                                    <a href="new_msg.php" class="sidebar-link">
-                                        <i class="mdi mdi-note-outline"></i>
-                                        <span class="hide-menu"> New Messages </span>
-                                    </a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a href="arch_msg.php" class="sidebar-link">
-                                        <i class="mdi mdi-note-plus"></i>
-                                        <span class="hide-menu"> Archived Messages </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        </li>
-                        <li class="sidebar-item"> 
-                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
-                                <i class="mdi mdi-receipt"></i>
-                                <span class="hide-menu">Report</span>
-                            </a>
-                            <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item">
-                                    <a href="sell.php" class="sidebar-link">
-                                        <i class="mdi mdi-note-outline"></i>
-                                        <span class="hide-menu">Sell</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a href="profite.php" class="sidebar-link">
-                                        <i class="mdi mdi-note-plus"></i>
-                                        <span class="hide-menu">Invesment & Profite </span>
-                                    </a>
-                                </li>
-								<li class="sidebar-item">
-                                    <a href="report.php" class="sidebar-link">
-                                        <i class="mdi mdi-note-plus"></i>
-                                        <span class="hide-menu"> Report </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-						<li class="sidebar-item"> 
-                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
-                                <i class="mdi mdi-receipt"></i>
-                                <span class="hide-menu">Setting</span>
-                            </a>
-                            <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item">
-                                    <a href="title.php" class="sidebar-link">
-                                        <i class="mdi mdi-note-outline"></i>
-                                        <span class="hide-menu">Title</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a href="social.php" class="sidebar-link">
-                                        <i class="mdi mdi-note-plus"></i>
-                                        <span class="hide-menu">Social </span>
-                                    </a>
-                                </li>
-								<li class="sidebar-item">
-                                    <a href="credit.php" class="sidebar-link">
-                                        <i class="mdi mdi-note-plus"></i>
-                                        <span class="hide-menu"> Footer Credit </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-												<li class="sidebar-item"> 
-                            <a class="sidebar-link has-arrow waves-effect waves-dark" href="#" aria-expanded="false">
-                                <i class="mdi mdi-receipt"></i>
-                                <span class="hide-menu">Pages</span>
-                            </a>
-                            <ul aria-expanded="false" class="collapse  first-level">
-                                <li class="sidebar-item">
-                                    <a href="about.php" class="sidebar-link">
-                                        <i class="mdi mdi-note-outline"></i>
-                                        <span class="hide-menu">About</span>
-                                    </a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a href="terms.php" class="sidebar-link">
-                                        <i class="mdi mdi-note-plus"></i>
-                                        <span class="hide-menu">Terms </span>
-                                    </a>
-                                </li>
-								
-                            </ul>
-                        </li>
+						
                         
                     </ul>
                 </nav>
