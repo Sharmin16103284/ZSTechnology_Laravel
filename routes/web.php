@@ -7,7 +7,7 @@ Route::get('/login','loginController@login')->name('login');
 //registration
 Route::get('/registration','loginController@registration')->name('registration');
 //registration insert
-Route::post('/reg_insert','loginController@reg_insert')->name('reg_insert');
+Route::post('/reg_insert','loginController@reg_insert')->name('reg_insert'); 
 
 //login register home
 Route::get('/index','loginController@index')->name('index');

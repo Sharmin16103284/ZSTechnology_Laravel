@@ -33,7 +33,7 @@
                     <!-- Form -->
                     <form class="form-horizontal m-t-20" method="post" action="{{route('reg_insert')}}">
 
-                        @csrf
+                        @csrf 
                         <div class="row p-b-30">
                             <div class="col-12">
                             	<div class="input-group mb-3">
@@ -56,13 +56,6 @@
                                     </div>
                                     <input name="password" type="password" class="form-control form-control-lg" placeholder="Password" required>
                                 </div>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                        <span class="input-group-text bg-warning text-white" id="basic-addon2"><i class="ti-pencil"></i></span>
-                                    </div>
-                                    <input name="password" type="password_confirmation" class="form-control form-control-lg" id="password_confirmation" placeholder="Repeat your password" required>
-                                </div>
-
                             </div>
                         </div>
                         <div class="row border-top border-secondary">
